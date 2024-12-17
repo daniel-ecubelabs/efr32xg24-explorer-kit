@@ -1,0 +1,6 @@
+---
+label: "03-iostream-printf"
+project:
+- id: "main"
+  path: "ex03-iostream-printf.slcp"
+  output: "."

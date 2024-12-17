@@ -1,0 +1,1 @@
+# hw-efr32mg24-explorer-kit
