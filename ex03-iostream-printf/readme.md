@@ -1,2 +1,2 @@
-# Empty C Example
-This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+# USART-printf C Example
+USART 드라이버를 이용해서 printf 출력하는 예제
