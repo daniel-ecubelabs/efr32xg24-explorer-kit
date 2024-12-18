@@ -19,6 +19,20 @@
 #include "sl_iostream.h"
 #include "sl_iostream_init_instances.h"
 #include "sl_iostream_handles.h"
+
+#include "sl_simple_button_instances.h"
+
+#ifndef BUTTON_INSTANCE_0
+#define BUTTON_INSTANCE_0   sl_button_btn0
+#endif
+
+#ifndef BUTTON_INSTANCE_1
+#define BUTTON_INSTANCE_1   sl_button_btn1
+#endif
+
+//#ifndef LED_INSTANCE_0
+//#define LED_INSTANCE_0      sl_led_led0
+//#endif
 /***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
@@ -49,4 +63,28 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
+}
+
+/***************************************************************************//**
+ * Callback on button change.
+ ******************************************************************************/
+void sl_button_on_change(const sl_button_t *handle)
+{
+  if (sl_button_get_state(handle) == SL_SIMPLE_BUTTON_PRESSED) {
+    if (&BUTTON_INSTANCE_0 == handle) {
+        printf("btn0 pressed\r\n");
+    }
+    else if (&BUTTON_INSTANCE_1 == handle) {
+        printf("btn1 pressed\r\n");
+    }
+  }
+
+  if (sl_button_get_state(handle) == SL_SIMPLE_BUTTON_RELEASED) {
+    if (&BUTTON_INSTANCE_0 == handle) {
+        printf("btn0 released\r\n");
+    }
+    else if (&BUTTON_INSTANCE_1 == handle) {
+        printf("btn1 released\r\n");
+    }
+  }
 }
