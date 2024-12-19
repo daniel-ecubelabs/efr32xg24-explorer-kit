@@ -59,3 +59,4 @@ GNU ARM v12.2.1 - Debug/
 
 #IAR Workbench
 *.dep
+ex05-timer/.projectlinkstore
