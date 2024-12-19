@@ -44,7 +44,7 @@ static bool general_timer_running = false;
 /**************************************************************************//**
  * Local functions and callbacks
  *****************************************************************************/
-static void start_general_timer(void);
+static void start_general_timer(bool flag);
 static void general_timer_callback(sl_sleeptimer_timer_handle_t *handle,
                             void *data);
 
@@ -73,7 +73,7 @@ void app_init(void)
   printf("Printf uses the default stream, as long as iostream_retarget_stdio is included.\r\n");
 
   /* Sleep Timer */
-  start_general_timer();
+  start_general_timer(1);
 }
 
 /***************************************************************************//**
@@ -82,7 +82,7 @@ void app_init(void)
 void app_process_action(void)
 {
   if(general_timer_running == false){
-      start_general_timer();
+      start_general_timer(0);
       printf("general timer started \r\n");
   }
 }
@@ -116,11 +116,22 @@ void sl_button_on_change(const sl_button_t *handle)
  *   Starting the global timer, the timeout will restart the BLE activity
  *
  *****************************************************************************/
-static void start_general_timer(void){
-  sl_sleeptimer_start_timer(&general_timer,
-                            sl_sleeptimer_ms_to_tick(3000),
-                            general_timer_callback,
-                            NULL, 0, 0);
+static void start_general_timer(bool flag){
+  if(flag){
+      printf("start\r\n");
+      sl_sleeptimer_start_timer(&general_timer,
+                                3000/*sl_sleeptimer_ms_to_tick(3000)*/,
+                                general_timer_callback,
+                                NULL, 0, 0);
+  }
+  else{
+      printf("restart\r\n");
+      sl_sleeptimer_restart_timer_ms(&general_timer,
+                                  3000/*sl_sleeptimer_ms_to_tick(3000)*/,
+                                  general_timer_callback,
+                                  NULL, 0, 0);
+  }
+
   general_timer_running = true;
 }
 
