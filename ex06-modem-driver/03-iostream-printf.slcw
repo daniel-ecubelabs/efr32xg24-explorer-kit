@@ -1,0 +1,7 @@
+---
+label: "03-iostream-printf"
+quality: "unknown"
+project:
+- id: "main"
+  path: "ex06-modem-driver.slcp"
+  output: "."

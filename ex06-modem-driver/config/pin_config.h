@@ -68,14 +68,6 @@
 // [PRS.SYNCH3]$
 
 // $[GPIO]
-// GPIO SWV on PA03
-#ifndef GPIO_SWV_PORT                           
-#define GPIO_SWV_PORT                            gpioPortA
-#endif
-#ifndef GPIO_SWV_PIN                            
-#define GPIO_SWV_PIN                             3
-#endif
-
 // [GPIO]$
 
 // $[TIMER0]
@@ -163,20 +155,6 @@
 #endif
 #ifndef _PIN                                    
 #define _PIN                                     0
-#endif
-
-#ifndef BTN0_PORT                               
-#define BTN0_PORT                                gpioPortB
-#endif
-#ifndef BTN0_PIN                                
-#define BTN0_PIN                                 2
-#endif
-
-#ifndef BTN1_PORT                               
-#define BTN1_PORT                                gpioPortB
-#endif
-#ifndef BTN1_PIN                                
-#define BTN1_PIN                                 3
 #endif
 
 // [CUSTOM_PIN_NAME]$

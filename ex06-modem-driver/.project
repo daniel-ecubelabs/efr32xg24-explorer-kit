@@ -86,11 +86,6 @@
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_status.h</locationURI>
 		</link>
 		<link>
-			<name>simplicity_sdk_2024.6.2/platform/common/inc/sl_string.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_string.h</locationURI>
-		</link>
-		<link>
 			<name>simplicity_sdk_2024.6.2/platform/common/inc/sli_code_classification.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sli_code_classification.h</locationURI>
@@ -104,11 +99,6 @@
 			<name>simplicity_sdk_2024.6.2/platform/common/src/sl_core_cortexm.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/common/src/sl_core_cortexm.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/common/src/sl_string.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/common/src/sl_string.c</locationURI>
 		</link>
 		<link>
 			<name>simplicity_sdk_2024.6.2/platform/common/src/sl_syscalls.c</name>
@@ -164,6 +154,16 @@
 			<name>simplicity_sdk_2024.6.2/platform/emlib/inc/em_emu.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_emu.h</locationURI>
+		</link>
+		<link>
+			<name>simplicity_sdk_2024.6.2/platform/emlib/inc/em_eusart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_eusart.h</locationURI>
+		</link>
+		<link>
+			<name>simplicity_sdk_2024.6.2/platform/emlib/inc/em_eusart_compat.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_eusart_compat.h</locationURI>
 		</link>
 		<link>
 			<name>simplicity_sdk_2024.6.2/platform/emlib/inc/em_gpio.h</name>
@@ -251,6 +251,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_emu.c</locationURI>
 		</link>
 		<link>
+			<name>simplicity_sdk_2024.6.2/platform/emlib/src/em_eusart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_eusart.c</locationURI>
+		</link>
+		<link>
 			<name>simplicity_sdk_2024.6.2/platform/emlib/src/em_gpio.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_gpio.c</locationURI>
@@ -311,16 +316,6 @@
 			<locationURI>STUDIO_SDK_LOC/platform/peripheral/src/sl_hal_sysrtc.c</locationURI>
 		</link>
 		<link>
-			<name>simplicity_sdk_2024.6.2/hardware/driver/configuration_over_swo/inc/sl_cos.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/hardware/driver/configuration_over_swo/inc/sl_cos.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/hardware/driver/configuration_over_swo/src/sl_cos.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/hardware/driver/configuration_over_swo/src/sl_cos.c</locationURI>
-		</link>
-		<link>
 			<name>simplicity_sdk_2024.6.2/platform/CMSIS/Core/Include/cmsis_compiler.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/CMSIS/Core/Include/cmsis_compiler.h</locationURI>
@@ -366,36 +361,6 @@
 			<locationURI>STUDIO_SDK_LOC/platform/common/toolchain/inc/sl_memory_region.h</locationURI>
 		</link>
 		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/button/inc/sl_button.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/button/inc/sl_button.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/button/inc/sl_simple_button.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/button/inc/sl_simple_button.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/button/src/sl_button.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/button/src/sl_button.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/button/src/sl_simple_button.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/button/src/sl_simple_button.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/debug/inc/sl_debug_swo.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/debug/inc/sl_debug_swo.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/driver/debug/src/sl_debug_swo.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/debug/src/sl_debug_swo.c</locationURI>
-		</link>
-		<link>
 			<name>simplicity_sdk_2024.6.2/platform/emdrv/common/inc/ecode.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emdrv/common/inc/ecode.h</locationURI>
@@ -419,6 +384,16 @@
 			<name>simplicity_sdk_2024.6.2/platform/emdrv/gpiointerrupt/src/gpiointerrupt.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emdrv/gpiointerrupt/src/gpiointerrupt.c</locationURI>
+		</link>
+		<link>
+			<name>simplicity_sdk_2024.6.2/platform/emdrv/uartdrv/inc/uartdrv.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emdrv/uartdrv/inc/uartdrv.h</locationURI>
+		</link>
+		<link>
+			<name>simplicity_sdk_2024.6.2/platform/emdrv/uartdrv/src/uartdrv.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emdrv/uartdrv/src/uartdrv.c</locationURI>
 		</link>
 		<link>
 			<name>simplicity_sdk_2024.6.2/platform/service/clock_manager/inc/sl_clock_manager.h</name>
@@ -529,46 +504,6 @@
 			<name>simplicity_sdk_2024.6.2/platform/service/interrupt_manager/src/sli_interrupt_manager.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/interrupt_manager/src/sli_interrupt_manager.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/inc/sl_iostream.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/inc/sl_iostream_uart.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_uart.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/inc/sl_iostream_usart.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_usart.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/inc/sli_iostream_uart.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sli_iostream_uart.h</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/src/sl_iostream.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/src/sl_iostream_uart.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_uart.c</locationURI>
-		</link>
-		<link>
-			<name>simplicity_sdk_2024.6.2/platform/service/iostream/src/sl_iostream_usart.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_usart.c</locationURI>
 		</link>
 		<link>
 			<name>simplicity_sdk_2024.6.2/platform/service/memory_manager/inc/sl_memory_manager_region.h</name>

@@ -1,6 +1,0 @@
----
-label: "ex06-bg96-driver"
-project:
-- id: "main"
-  path: "ex06-bg96-driver.slcp"
-  output: "."
