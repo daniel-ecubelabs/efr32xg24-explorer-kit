@@ -3,15 +3,19 @@
 #include <stddef.h>
 
 #include "sl_uartdrv_usart_vcom_config.h"
+#include "sl_uartdrv_eusart_mikroe_config.h"
 
 UARTDRV_HandleData_t sl_uartdrv_usart_vcom_handle_data;
 UARTDRV_Handle_t sl_uartdrv_usart_vcom_handle = &sl_uartdrv_usart_vcom_handle_data;
+UARTDRV_HandleData_t sl_uartdrv_eusart_mikroe_handle_data;
+UARTDRV_Handle_t sl_uartdrv_eusart_mikroe_handle = &sl_uartdrv_eusart_mikroe_handle_data;
+
 
 static UARTDRV_Handle_t sli_uartdrv_default_handle = NULL;
 
 /* If CTS and RTS not defined, define a default value to avoid errors */
 #ifndef SL_UARTDRV_USART_VCOM_CTS_PORT
-#define SL_UARTDRV_USART_VCOM_CTS_PORT  gpioPortA
+#define SL_UARTDRV_USART_VCOM_CTS_PORT  SL_GPIO_PORT_A
 #define SL_UARTDRV_USART_VCOM_CTS_PIN   0
 #if defined(_USART_ROUTELOC1_MASK)
 #define SL_UARTDRV_USART_VCOM_CTS_LOC   0
@@ -19,17 +23,30 @@ static UARTDRV_Handle_t sli_uartdrv_default_handle = NULL;
 #endif
 
 #ifndef SL_UARTDRV_USART_VCOM_RTS_PORT
-#define SL_UARTDRV_USART_VCOM_RTS_PORT  gpioPortA
+#define SL_UARTDRV_USART_VCOM_RTS_PORT  SL_GPIO_PORT_A
 #define SL_UARTDRV_USART_VCOM_RTS_PIN   0
 #if defined(_USART_ROUTELOC1_MASK)
 #define SL_UARTDRV_USART_VCOM_RTS_LOC   0
 #endif
 #endif
 
+#ifndef SL_UARTDRV_EUSART_MIKROE_CTS_PORT
+#define SL_UARTDRV_EUSART_MIKROE_CTS_PORT  SL_GPIO_PORT_A
+#define SL_UARTDRV_EUSART_MIKROE_CTS_PIN   0
+#endif
+
+#ifndef SL_UARTDRV_EUSART_MIKROE_RTS_PORT
+#define SL_UARTDRV_EUSART_MIKROE_RTS_PORT  SL_GPIO_PORT_A
+#define SL_UARTDRV_EUSART_MIKROE_RTS_PIN   0
+#endif
+
 
 /* Define RX and TX buffer queues */
 DEFINE_BUF_QUEUE(SL_UARTDRV_USART_VCOM_RX_BUFFER_SIZE, sl_uartdrv_usart_vcom_rx_buffer);
 DEFINE_BUF_QUEUE(SL_UARTDRV_USART_VCOM_TX_BUFFER_SIZE, sl_uartdrv_usart_vcom_tx_buffer);
+
+DEFINE_BUF_QUEUE(SL_UARTDRV_EUSART_MIKROE_RX_BUFFER_SIZE, sl_uartdrv_eusart_mikroe_rx_buffer);
+DEFINE_BUF_QUEUE(SL_UARTDRV_EUSART_MIKROE_TX_BUFFER_SIZE, sl_uartdrv_eusart_mikroe_tx_buffer);
 
 
 /* Create uartdrv initialization structs */
@@ -67,10 +84,34 @@ UARTDRV_InitUart_t sl_uartdrv_usart_init_vcom = {
 #endif
 };
 
+UARTDRV_InitEuart_t sl_uartdrv_eusart_init_mikroe = {   
+  .port = SL_UARTDRV_EUSART_MIKROE_PERIPHERAL,
+  .useLowFrequencyMode = SL_UARTDRV_EUSART_MIKROE_LF_MODE,
+  .baudRate = SL_UARTDRV_EUSART_MIKROE_BAUDRATE,
+  .txPort = SL_UARTDRV_EUSART_MIKROE_TX_PORT,
+  .rxPort = SL_UARTDRV_EUSART_MIKROE_RX_PORT,
+  .txPin = SL_UARTDRV_EUSART_MIKROE_TX_PIN,
+  .rxPin = SL_UARTDRV_EUSART_MIKROE_RX_PIN,
+  .uartNum = SL_UARTDRV_EUSART_MIKROE_PERIPHERAL_NO,
+  .stopBits = SL_UARTDRV_EUSART_MIKROE_STOP_BITS,
+  .parity = SL_UARTDRV_EUSART_MIKROE_PARITY,
+  .oversampling = SL_UARTDRV_EUSART_MIKROE_OVERSAMPLING,
+  .mvdis = SL_UARTDRV_EUSART_MIKROE_MVDIS,
+  .fcType = SL_UARTDRV_EUSART_MIKROE_FLOW_CONTROL_TYPE,
+  .ctsPort = SL_UARTDRV_EUSART_MIKROE_CTS_PORT,
+  .ctsPin = SL_UARTDRV_EUSART_MIKROE_CTS_PIN,
+  .rtsPort = SL_UARTDRV_EUSART_MIKROE_RTS_PORT,
+  .rtsPin = SL_UARTDRV_EUSART_MIKROE_RTS_PIN,
+  .rxQueue = (UARTDRV_Buffer_FifoQueue_t *)&sl_uartdrv_eusart_mikroe_rx_buffer,
+  .txQueue = (UARTDRV_Buffer_FifoQueue_t *)&sl_uartdrv_eusart_mikroe_tx_buffer,
+};
+
 
 void sl_uartdrv_init_instances(void){
   UARTDRV_InitUart(sl_uartdrv_usart_vcom_handle, &sl_uartdrv_usart_init_vcom);
   sl_uartdrv_set_default(sl_uartdrv_usart_vcom_handle);
+  UARTDRV_InitEuart(sl_uartdrv_eusart_mikroe_handle, &sl_uartdrv_eusart_init_mikroe);
+  //sl_uartdrv_set_default(sl_uartdrv_eusart_mikroe_handle);
 }
 
 sl_status_t sl_uartdrv_set_default(UARTDRV_Handle_t handle)

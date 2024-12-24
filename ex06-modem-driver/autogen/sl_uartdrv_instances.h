@@ -9,6 +9,7 @@ extern "C" {
 #include "uartdrv.h"
 
 extern UARTDRV_Handle_t sl_uartdrv_usart_vcom_handle;
+extern UARTDRV_Handle_t sl_uartdrv_eusart_mikroe_handle;
 
 void sl_uartdrv_init_instances(void);
 

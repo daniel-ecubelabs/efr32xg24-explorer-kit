@@ -9,7 +9,7 @@
 #include "sl_device_init_emu.h"
 #include "sl_board_control.h"
 #include "sl_sleeptimer.h"
-#include "gpiointerrupt.h"
+#include "sl_gpio.h"
 #include "sl_uartdrv_instances.h"
 
 void sl_platform_init(void)
@@ -26,7 +26,7 @@ void sl_platform_init(void)
 
 void sl_driver_init(void)
 {
-  GPIOINT_Init();
+  sl_gpio_init();
   sl_uartdrv_init_instances();
 }
 

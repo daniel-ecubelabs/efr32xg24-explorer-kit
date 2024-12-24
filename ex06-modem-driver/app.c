@@ -23,6 +23,7 @@ int _write(int file, char *ptr, int len)
     UARTDRV_TransmitB(sl_uartdrv_get_default(), (uint8_t*)ptr, len);
     return len;
 }
+
 /***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
@@ -32,6 +33,10 @@ void app_init(void)
   UARTDRV_Transmit(sl_uartdrv_get_default(), (uint8_t*)str, 16, NULL);
 
   printf("Printf uses the default stream, as long as iostream_retarget_stdio is included.\r\n");
+
+  UARTDRV_Transmit(sl_uartdrv_eusart_mikroe_handle, (uint8_t*)str, 16, NULL);
+
+
 }
 
 /***************************************************************************//**
