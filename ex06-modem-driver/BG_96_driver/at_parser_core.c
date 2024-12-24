@@ -32,10 +32,11 @@
  * as a demonstration for evaluation purposes only. This code will be maintained
  * at the sole discretion of Silicon Labs.
  ******************************************************************************/
-#include "at_parser_core.h"
-#include <string.h>
-#include "circular_queue.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "at_parser_core.h"
+#include "circular_queue.h"
 
 /******************************************************************************
  **********************   MACRO UTILITY FUNCTIONS   ***************************
@@ -44,6 +45,8 @@
   (NULL != strstr ((const char*) new_line, (const char*)substr))
 
 static Queue_t cmd_q;
+
+//스케쥴 상태를 표시해 주는 변수
 static at_cmd_scheduler_state_t sch_state = SCH_READY;
 static at_scheduler_status_t *global_status;
 
@@ -57,7 +60,7 @@ static void general_platform_cb(uint8_t *data,
 void at_parser_init()
 {
   queueInit(&cmd_q, CMD_Q_SIZE);
-  //at_platform_init(general_platform_cb);
+  at_platform_init(general_platform_cb);
 }
 
 void at_parser_report_data(uint8_t *data)
@@ -127,9 +130,11 @@ sl_status_t at_parser_start_scheduler(at_scheduler_status_t *output_object)
   at_cmd_desc_t *at_cmd_descriptor;
 
   if (SCH_READY != sch_state) {
+      printf("sch_state:%d\r\n", (at_cmd_scheduler_state_t)sch_state);
     return SL_STATUS_BUSY;
   }
   if (queueIsEmpty(&cmd_q)) {
+      printf("queueIsEmpty\r\n");
     return SL_STATUS_OK;
   }
   sch_state = SCH_SENDING;
@@ -247,6 +252,7 @@ void at_parser_process(void)
 
   switch (sch_state) {
   case SCH_PROCESSED:
+    printf("SCH_PROCESSED\r\n");
     //remove previous command
     queueRemove(&cmd_q);
     at_platform_finish_cmd();
@@ -261,6 +267,7 @@ void at_parser_process(void)
     }
     break;
   case SCH_ERROR:
+    printf("SCH_ERROR\r\n");
     at_platform_finish_cmd();
     while (!queueIsEmpty(&cmd_q)) {
       queueRemove(&cmd_q);
@@ -269,8 +276,10 @@ void at_parser_process(void)
     sch_state = SCH_READY;
     break;
   case SCH_READY:
+    printf("SCH_READY\r\n");
     break;
   case SCH_SENDING:
+    printf("SCH_SENDING\r\n");
     break;
   }
 }

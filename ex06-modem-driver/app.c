@@ -24,6 +24,25 @@
 sl_sleeptimer_timer_handle_t bg96_state_timeout_timer;
 //static sl_sleeptimer_timer_handle_t bg96_timer;
 
+static sl_status_t bg96_status = SL_STATUS_FAIL;
+
+typedef enum{
+  wake_up,
+  net_read_imei,
+  network_registration,
+  GPS_get_position,
+  net_open,
+  net_send,
+  net_close,
+  net_delay_open,
+  net_delay_netreg,
+  net_delay_gsm_start,
+  net_delay,
+  all_finished
+}bg96_state;
+
+bg96_state _bg96_state = wake_up;
+
 at_scheduler_status_t output_object = { SL_STATUS_OK, 0, "" };
 /**************************************************************************//**
  * Local functions and callbacks
@@ -53,6 +72,8 @@ void app_init(void)
 
   start_bg_96_timer(&output_object, 1000);
 
+  at_parser_init_output_object(&output_object);
+
   printf("app_init--\r\n");
 }
 
@@ -61,6 +82,32 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
+  at_parser_process();
+
+  if (output_object.status == SL_STATUS_OK) {
+    switch (_bg96_state) {
+    case wake_up:
+      printf("bg96 wake_up finished \r\n");
+      _bg96_state = net_read_imei;
+      at_parser_init_output_object(&output_object);
+      start_bg_96_timer(&output_object, 500);
+      break;
+
+    case net_read_imei:
+      printf("modem read imei\r\n");
+      _bg96_state = net_delay_netreg;
+      at_parser_init_output_object(&output_object);
+      bg96_status = read_imei(&output_object);
+      break;
+
+    case net_delay_netreg:
+      printf("bg96 network registration started \r\n");
+      _bg96_state = network_registration;
+      at_parser_init_output_object(&output_object);
+      bg96_status = bg96_network_registration(&output_object);
+      break;
+    }
+  }
 }
 
 /**************************************************************************//**
