@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2024-12-24T03:21:39.728272500Z",
+    "timestamp" : "2024-12-24T05:49:37.134313100Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -84,6 +84,246 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:uartdrv_eusart",
+      "name" : "UARTDRV EUSART",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:uartdrv_usart",
+      "name" : "UARTDRV USART",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_manager",
+      "name" : "Device Manager",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:board_control",
+      "name" : "Board Control",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_core",
+      "name" : "Core",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_eusart",
+      "name" : "EUSART",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_system",
+      "name" : "SYSTEM",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_init_hal_s2",
+      "name" : "Clock Manager Init HAL Series 2",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:hal_gpio",
+      "name" : "GPIO",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_gpio",
+      "name" : "Device Manager GPIO",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:event_handler",
+      "name" : "Event Handler",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_msc",
+      "name" : "MSC",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_dcdc",
+      "name" : "DC-DC Converter",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_emu",
+      "name" : "Energy Management Unit (EMU)",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:enum",
+      "name" : "Enumerations",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:interrupt_manager_cortexm",
+      "name" : "Interrupt Manager Cortex-M",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:atomic",
+      "name" : "Atomic Operations Library",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:code_classification",
+      "name" : "Code Classification",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_usart",
+      "name" : "USART",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:status",
+      "name" : "Status Codes Definitions",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.0:emlib_chip",
       "name" : "CHIP",
       "version" : "2024.12.0",
@@ -120,20 +360,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:board_control",
-      "name" : "Board Control",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_core",
-      "name" : "Core",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_ldma",
+      "name" : "LDMA",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -170,30 +398,6 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.0:brd2703a_config",
       "name" : "brd2703a config",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_system",
-      "name" : "SYSTEM",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_init_hal_s2",
-      "name" : "Clock Manager Init HAL Series 2",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -252,8 +456,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:hal_gpio",
-      "name" : "GPIO",
+      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_runtime_hal_s2",
+      "name" : "Clock Manager Runtime HAL Series 2",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -264,8 +468,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_runtime_hal_s2",
-      "name" : "Clock Manager Runtime HAL Series 2",
+      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_burtc",
+      "name" : "BURTC",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -288,32 +492,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_gpio",
-      "name" : "Device Manager GPIO",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:event_handler",
-      "name" : "Event Handler",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_msc",
-      "name" : "MSC",
+      "bom-ref" : "simplicity_sdk:2024.12.0:dmadrv",
+      "name" : "DMADRV",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -360,20 +540,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_dcdc",
-      "name" : "DC-DC Converter",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_init_emu",
-      "name" : "Energy Management Unit (EMU)",
+      "bom-ref" : "simplicity_sdk:2024.12.0:device_peripheral_hal",
+      "name" : "Device Manager Peripheral HAL",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -428,224 +596,8 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:enum",
-      "name" : "Enumerations",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.0:emlib_core",
       "name" : "CORE",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:interrupt_manager_cortexm",
-      "name" : "Interrupt Manager Cortex-M",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:sl_system_init",
-      "name" : "System Init",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_runtime",
-      "name" : "Clock Manager Runtime",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:code_classification",
-      "name" : "Code Classification",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:sl_common",
-      "name" : "Common Functions",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:brd2703a",
-      "name" : "BRD2703A",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:status",
-      "name" : "Status Codes Definitions",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:gpio",
-      "name" : "GPIO Driver",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:uartdrv_usart",
-      "name" : "UARTDRV USART",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_manager",
-      "name" : "Device Manager",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_eusart",
-      "name" : "EUSART",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:atomic",
-      "name" : "Atomic Operations Library",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_usart",
-      "name" : "USART",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_ldma",
-      "name" : "LDMA",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:emlib_burtc",
-      "name" : "BURTC",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:dmadrv",
-      "name" : "DMADRV",
-      "version" : "2024.12.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:device_peripheral_hal",
-      "name" : "Device Manager Peripheral HAL",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -716,8 +668,44 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:sl_system_init",
+      "name" : "System Init",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.0:sleeptimer",
       "name" : "Sleep Timer",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:clock_manager_runtime",
+      "name" : "Clock Manager Runtime",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:sl_common",
+      "name" : "Common Functions",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -740,14 +728,38 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.0:uartdrv_eusart",
-      "name" : "UARTDRV EUSART",
+      "bom-ref" : "simplicity_sdk:2024.12.0:brd2703a",
+      "name" : "BRD2703A",
       "version" : "2024.12.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
       },
       "licenses" : [ {
         "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:gpio",
+      "name" : "GPIO Driver",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.0:silabs_core_circular_queue",
+      "name" : "Circular Queue",
+      "version" : "2024.12.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
       } ]
     } ]
   } ]

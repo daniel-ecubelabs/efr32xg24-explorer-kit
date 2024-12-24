@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2024-12-24T03:21:39.728272500Z
+Created: 2024-12-24T05:49:37.134313100Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-simplicity_sdk-2024.12.0
 
@@ -30,60 +30,61 @@ Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_system
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_manager
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-board_control
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_core
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_system
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-hal_gpio
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_gpio
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-event_handler
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_msc
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_emu
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-enum
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-atomic
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-code_classification
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_usart
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-status
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_chip
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_gpio
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_clock_hal
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-board_control
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_core
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_system_process_action
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_assert
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-brd2703a_config
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_system
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_clock
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-component_catalog
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_emu
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_cmu
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-hal_gpio
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_syscfg
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_gpio
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-event_handler
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_msc
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-dmadrv
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_core
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-hal_common
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_common
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_init_emu
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-cmsis_core
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-enum
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_core
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_system_init
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-code_classification
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_common
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-brd2703a
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-status
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-gpio
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_manager
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-atomic
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_usart
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-dmadrv
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-ecode
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-hal_sysrtc
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_timer
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-emlib_prs
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-uartdrv_core
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_system_init
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sleeptimer
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-sl_common
 Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-device_peripheral
-Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-brd2703a
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-gpio
+Relationship: SPDXRef-simplicity_sdk-2024.12.0 CONTAINS SPDXRef-simplicity_sdk-2024.12.0-silabs_core_circular_queue
 
 ## Package Information
 PackageName: EFR32MG24B210F1536IM48
@@ -141,6 +142,226 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-sl_system CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
+PackageName: UARTDRV EUSART
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: UARTDRV USART
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Device Manager
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_manager
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_manager CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Board Control
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-board_control
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-board_control CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Core
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_core
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: EUSART
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: SYSTEM
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_system
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_system CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Clock Manager Init HAL Series 2
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2 CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: GPIO
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-hal_gpio
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-hal_gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Device Manager GPIO
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_gpio
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Event Handler
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-event_handler
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-event_handler CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: MSC
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_msc
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_msc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: DC-DC Converter
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Energy Management Unit (EMU)
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_emu
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_emu CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Enumerations
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-enum
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-enum CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Interrupt Manager Cortex-M
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Atomic Operations Library
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-atomic
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-atomic CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Code Classification
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-code_classification
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-code_classification CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: USART
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_usart
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_usart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Status Codes Definitions
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-status
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-status CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
 PackageName: CHIP
 SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_chip
 PackageVersion: 2024.12.0
@@ -174,26 +395,15 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_clock_hal CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: Board Control
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-board_control
+PackageName: LDMA
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma
 PackageVersion: 2024.12.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-board_control CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Core
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_core
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: System Process Action
@@ -227,28 +437,6 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-brd2703a_config CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: SYSTEM
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_system
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_system CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Clock Manager Init HAL Series 2
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2 CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: Device Manager Clock
@@ -295,17 +483,6 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_cmu CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: GPIO
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-hal_gpio
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-hal_gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
 PackageName: Clock Manager Runtime HAL Series 2
 SPDXID: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2
 PackageVersion: 2024.12.0
@@ -315,6 +492,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2 CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: BURTC
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: SYSCFG
@@ -328,37 +516,15 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_syscfg CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: Device Manager GPIO
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_gpio
+PackageName: DMADRV
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-dmadrv
 PackageVersion: 2024.12.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Event Handler
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-event_handler
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-event_handler CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: MSC
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_msc
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_msc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-dmadrv CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: core
@@ -394,26 +560,15 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_common CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: DC-DC Converter
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc
+PackageName: Device Manager Peripheral HAL
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal
 PackageVersion: 2024.12.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Energy Management Unit (EMU)
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_init_emu
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_init_emu CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: CMSIS-Core
@@ -453,17 +608,6 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: Enumerations
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-enum
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-enum CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
 PackageName: CORE
 SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_core
 PackageVersion: 2024.12.0
@@ -473,193 +617,6 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Interrupt Manager Cortex-M
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: System Init
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-sl_system_init
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-sl_system_init CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Clock Manager Runtime
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Code Classification
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-code_classification
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-code_classification CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Common Functions
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-sl_common
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-sl_common CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: BRD2703A
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-brd2703a
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-brd2703a CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Status Codes Definitions
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-status
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-status CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: GPIO Driver
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-gpio
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: UARTDRV USART
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Device Manager
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_manager
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_manager CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: EUSART
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Atomic Operations Library
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-atomic
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-atomic CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: USART
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_usart
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_usart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: LDMA
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: BURTC
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: DMADRV
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-dmadrv
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-dmadrv CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
-
-## Package Information
-PackageName: Device Manager Peripheral HAL
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal
-PackageVersion: 2024.12.0
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: EMDRV Common Headers
@@ -717,6 +674,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
+PackageName: System Init
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-sl_system_init
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-sl_system_init CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
 PackageName: Sleep Timer
 SPDXID: SPDXRef-simplicity_sdk-2024.12.0-sleeptimer
 PackageVersion: 2024.12.0
@@ -726,6 +694,28 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-sleeptimer CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Clock Manager Runtime
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Common Functions
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-sl_common
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-sl_common CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
 PackageName: Device Manager Peripheral
@@ -739,12 +729,34 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.0-device_peripheral CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
 
 ## Package Information
-PackageName: UARTDRV EUSART
-SPDXID: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart
+PackageName: BRD2703A
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-brd2703a
 PackageVersion: 2024.12.0
 PrimaryPackagePurpose: LIBRARY
 PackageDownloadLocation: NOASSERTION
 PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-brd2703a CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: GPIO Driver
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-gpio
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0
+
+## Package Information
+PackageName: Circular Queue
+SPDXID: SPDXRef-simplicity_sdk-2024.12.0-silabs_core_circular_queue
+PackageVersion: 2024.12.0
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: MSLA
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.0-silabs_core_circular_queue CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.0

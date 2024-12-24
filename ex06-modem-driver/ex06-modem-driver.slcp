@@ -30,6 +30,7 @@ component:
 - {id: brd2703a_a02}
 - {id: clock_manager}
 - {id: device_init}
+- {id: silabs_core_circular_queue}
 - {id: sl_system}
 - instance: [mikroe]
   id: uartdrv_eusart

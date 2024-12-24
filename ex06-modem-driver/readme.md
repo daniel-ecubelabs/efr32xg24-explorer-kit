@@ -4,3 +4,4 @@ EUSART 드라이버는 MCU 외부에 연결되는 UART 할당
 ##Software Component
 Platform > Driver > UART > UARTDRV EUSART
 Platform > Driver > UART > UARTDRV USART
+Platform > Utilities > Circular Queue

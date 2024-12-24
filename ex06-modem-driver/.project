@@ -606,6 +606,16 @@
 			<locationURI>STUDIO_SDK_LOC/platform/service/system/src/sl_system_process_action.c</locationURI>
 		</link>
 		<link>
+			<name>simplicity_sdk_2024.12.0/util/silicon_labs/silabs_core/queue/circular_queue.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/silicon_labs/silabs_core/queue/circular_queue.c</locationURI>
+		</link>
+		<link>
+			<name>simplicity_sdk_2024.12.0/util/silicon_labs/silabs_core/queue/circular_queue.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/silicon_labs/silabs_core/queue/circular_queue.h</locationURI>
+		</link>
+		<link>
 			<name>simplicity_sdk_2024.12.0/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_acmp.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_acmp.h</locationURI>

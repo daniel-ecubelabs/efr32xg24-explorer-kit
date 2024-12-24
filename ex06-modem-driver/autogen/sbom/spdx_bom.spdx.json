@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2024-12-24T03:21:39.728272500Z",
+    "created" : "2024-12-24T05:49:37.134313100Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -58,6 +58,166 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart",
+    "name" : "UARTDRV EUSART",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart",
+    "name" : "UARTDRV USART",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_manager",
+    "name" : "Device Manager",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-board_control",
+    "name" : "Board Control",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_core",
+    "name" : "Core",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart",
+    "name" : "EUSART",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_system",
+    "name" : "SYSTEM",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2",
+    "name" : "Clock Manager Init HAL Series 2",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-hal_gpio",
+    "name" : "GPIO",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_gpio",
+    "name" : "Device Manager GPIO",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-event_handler",
+    "name" : "Event Handler",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_msc",
+    "name" : "MSC",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc",
+    "name" : "DC-DC Converter",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_emu",
+    "name" : "Energy Management Unit (EMU)",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-enum",
+    "name" : "Enumerations",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm",
+    "name" : "Interrupt Manager Cortex-M",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-atomic",
+    "name" : "Atomic Operations Library",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-code_classification",
+    "name" : "Code Classification",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_usart",
+    "name" : "USART",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-status",
+    "name" : "Status Codes Definitions",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_chip",
     "name" : "CHIP",
     "versionInfo" : "2024.12.0",
@@ -82,16 +242,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-board_control",
-    "name" : "Board Control",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_core",
-    "name" : "Core",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma",
+    "name" : "LDMA",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -116,22 +268,6 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a_config",
     "name" : "brd2703a config",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_system",
-    "name" : "SYSTEM",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2",
-    "name" : "Clock Manager Init HAL Series 2",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -170,16 +306,16 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-hal_gpio",
-    "name" : "GPIO",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2",
+    "name" : "Clock Manager Runtime HAL Series 2",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2",
-    "name" : "Clock Manager Runtime HAL Series 2",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc",
+    "name" : "BURTC",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -194,24 +330,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_gpio",
-    "name" : "Device Manager GPIO",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-event_handler",
-    "name" : "Event Handler",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_msc",
-    "name" : "MSC",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-dmadrv",
+    "name" : "DMADRV",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -242,16 +362,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc",
-    "name" : "DC-DC Converter",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_emu",
-    "name" : "Energy Management Unit (EMU)",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal",
+    "name" : "Device Manager Peripheral HAL",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -289,152 +401,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-enum",
-    "name" : "Enumerations",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_core",
     "name" : "CORE",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm",
-    "name" : "Interrupt Manager Cortex-M",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-sl_system_init",
-    "name" : "System Init",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime",
-    "name" : "Clock Manager Runtime",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-code_classification",
-    "name" : "Code Classification",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-sl_common",
-    "name" : "Common Functions",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a",
-    "name" : "BRD2703A",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-status",
-    "name" : "Status Codes Definitions",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-gpio",
-    "name" : "GPIO Driver",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart",
-    "name" : "UARTDRV USART",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_manager",
-    "name" : "Device Manager",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart",
-    "name" : "EUSART",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-atomic",
-    "name" : "Atomic Operations Library",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_usart",
-    "name" : "USART",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma",
-    "name" : "LDMA",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc",
-    "name" : "BURTC",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-dmadrv",
-    "name" : "DMADRV",
-    "versionInfo" : "2024.12.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal",
-    "name" : "Device Manager Peripheral HAL",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -481,8 +449,32 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-sl_system_init",
+    "name" : "System Init",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-sleeptimer",
     "name" : "Sleep Timer",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime",
+    "name" : "Clock Manager Runtime",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-sl_common",
+    "name" : "Common Functions",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -497,13 +489,29 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart",
-    "name" : "UARTDRV EUSART",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a",
+    "name" : "BRD2703A",
     "versionInfo" : "2024.12.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-gpio",
+    "name" : "GPIO Driver",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.0-silabs_core_circular_queue",
+    "name" : "Circular Queue",
+    "versionInfo" : "2024.12.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
@@ -531,6 +539,86 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_manager",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-board_control",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_system",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-hal_gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-event_handler",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_msc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_emu",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-enum",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-atomic",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-code_classification",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_usart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-status",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_chip",
     "relationshipType" : "CONTAINS"
   }, {
@@ -543,11 +631,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-board_control",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_core",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -560,14 +644,6 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a_config",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_system",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_init_hal_s2",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -587,11 +663,11 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-hal_gpio",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime_hal_s2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -599,15 +675,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_gpio",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-event_handler",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_msc",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-dmadrv",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -623,11 +691,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_dcdc",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_init_emu",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -643,79 +707,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-enum",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_core",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-interrupt_manager_cortexm",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-sl_system_init",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-code_classification",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-sl_common",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-status",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-gpio",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_usart",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_manager",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_eusart",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-atomic",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_usart",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_ldma",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-emlib_burtc",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-dmadrv",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-device_peripheral_hal",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -739,7 +731,19 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-sl_system_init",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-sleeptimer",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-clock_manager_runtime",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-sl_common",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
@@ -747,7 +751,15 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-uartdrv_eusart",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-brd2703a",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.0-silabs_core_circular_queue",
     "relationshipType" : "CONTAINS"
   } ]
 }

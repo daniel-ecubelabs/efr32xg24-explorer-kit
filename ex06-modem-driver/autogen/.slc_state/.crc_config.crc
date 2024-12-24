@@ -1,4 +1,5 @@
 #CRC Codes for initially generated config files -- do not modify!
+circular_queue_config.h=-927298553
 dmadrv_config.h=1207334949
 emlib_core_debug_config.h=-212744839
 sl_board_control_config.h=185964020
