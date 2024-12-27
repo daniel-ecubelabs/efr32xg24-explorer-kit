@@ -1,0 +1,6 @@
+---
+label: "ex07-modem-driver"
+project:
+- id: "main"
+  path: "ex07-modem-driver.slcp"
+  output: "."

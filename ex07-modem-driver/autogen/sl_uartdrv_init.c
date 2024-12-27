@@ -111,7 +111,7 @@ void sl_uartdrv_init_instances(void){
   UARTDRV_InitUart(sl_uartdrv_usart_vcom_handle, &sl_uartdrv_usart_init_vcom);
   sl_uartdrv_set_default(sl_uartdrv_usart_vcom_handle);
   UARTDRV_InitEuart(sl_uartdrv_eusart_mikroe_handle, &sl_uartdrv_eusart_init_mikroe);
-  //sl_uartdrv_set_default(sl_uartdrv_eusart_mikroe_handle);
+  sl_uartdrv_set_default(sl_uartdrv_eusart_mikroe_handle);
 }
 
 sl_status_t sl_uartdrv_set_default(UARTDRV_Handle_t handle)
