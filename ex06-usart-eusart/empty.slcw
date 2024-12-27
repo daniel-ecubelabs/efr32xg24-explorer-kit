@@ -1,0 +1,6 @@
+---
+label: "empty"
+project:
+- id: "main"
+  path: "ex06-usart-eusart.slcp"
+  output: "."
