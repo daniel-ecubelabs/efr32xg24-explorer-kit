@@ -1,8 +1,11 @@
 # hw-efr32mg24-explorer-kit
 
 <h3 align="center">안녕하세요!👋</h3>
-<p align="center">실리콘랩스 EFR32xG24 익스플로러 키드.
-<br>Silicon Labs EFR32xG24 Explorer Kits</p>
+<p align="center">실리콘랩스 EFR32xG24 익스플로러 키트<br>
+Silicon Labs EFR32xG24 Explorer Kits<br>
+컴포넌트 비교 파일 <br>
+*.slcp 또는 /autogen/sl_component_catalog.h
+</p>
 
 <br>
 
