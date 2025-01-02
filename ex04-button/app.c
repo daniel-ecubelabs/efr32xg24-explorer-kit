@@ -63,6 +63,26 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
+#if 0 //polling 방식
+  switch(sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(0)))
+  {
+    case SL_SIMPLE_BUTTON_PRESSED:
+      printf("BTN0 PRESSED\r\n");
+      break;
+
+    case SL_SIMPLE_BUTTON_RELEASED:
+      printf("BTN0 RELEASE\r\n");
+      break;
+  }
+
+  if(sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(0)) == SL_SIMPLE_BUTTON_PRESSED){
+      printf("btn0 pressed\r\n");
+  }
+
+  if(sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(1)) == SL_SIMPLE_BUTTON_PRESSED){
+      printf("btn1 pressed\r\n");
+  }
+#endif
 }
 
 /***************************************************************************//**
