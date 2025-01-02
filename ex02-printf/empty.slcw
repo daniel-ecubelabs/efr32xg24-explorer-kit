@@ -1,0 +1,7 @@
+---
+label: "empty"
+quality: "unknown"
+project:
+- id: "main"
+  path: "ex02-printf.slcp"
+  output: "."
