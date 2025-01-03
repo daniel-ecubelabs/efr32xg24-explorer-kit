@@ -1,0 +1,6 @@
+---
+label: "ex10-usart0-rx-parser"
+project:
+- id: "main"
+  path: "ex10-usart0-tx-send-command.slcp"
+  output: "."
