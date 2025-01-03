@@ -10,7 +10,7 @@ Silicon Labs EFR32xG24 Explorer Kits<br>
 <br>
 
 <h3 align="center">✒ xx and XXX ✒</h3>
-<p align="center">https://www.ecubelabs.com<br>https://www.ecubelabs.com</p>
+<p align="center">https://www.xxx.com<br>https://www.xxx.com</p>
 
 <br>
 
