@@ -1,4 +1,4 @@
-# hw-efr32mg24-explorer-kit
+# EFR32MG24-Explorer-Kit
 
 <h3 align="center">안녕하세요!👋</h3>
 <p align="center">실리콘랩스 EFR32xG24 익스플로러 키트<br>
