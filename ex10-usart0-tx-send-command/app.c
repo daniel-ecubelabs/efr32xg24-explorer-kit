@@ -108,12 +108,11 @@ void USART0_TX_IRQHandler(void)
   if (*output_ptr != '\0'){
     USART_Tx(USART0, *(output_ptr++));
   }
-  else
-  {
-    //free((void*)output_ptr);
+  else{
     output_ptr = NULL;
     USART_IntDisable(USART0, USART_IEN_TXBL);
   }
+
   return;
 }
 
@@ -152,7 +151,7 @@ void send_cmd_cb(uint8_t *new_line, uint8_t call_number)
 
 void push_cmd()
 {
-  static at_cmd_desc_t at_ip = { "AT+QIACT?", send_cmd_cb, 3000 };
+  static at_cmd_desc_t at_ip = { "AT+QIACT?", send_cmd_cb, 1000 };
 
   printf("push_cmd\r\n");
 
@@ -222,6 +221,14 @@ static void timer_cb(sl_sleeptimer_timer_handle_t *handle,
   (void) handle;
 
   printf("timer call back\r\n");
+
+  if (queueIsEmpty(&cmd_q)) {
+      printf("timer_cb::queue empty\r\n");
+      return;
+  }
+
+  queueRemove(&cmd_q);
+  sl_sleeptimer_stop_timer(&my_timer);
 
   return;
 }
