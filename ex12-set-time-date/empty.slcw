@@ -1,0 +1,6 @@
+---
+label: "empty"
+project:
+- id: "main"
+  path: "ex12-set-time-date.slcp"
+  output: "."
