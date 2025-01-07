@@ -1,6 +1,7 @@
 # UART0 TX Send Command C Example
 - uart0를 통해 명령어를 전송
-
+- 인터럽트 처리부분에서 단순히 입력을 수신하고 출력하는 부분은 계속해서 인터럽트가 처리되는 반면
+  원형큐 부분을 처리하고자 하면 인터럽트가 한 번 들어오고 처리되지 않음.
 ## Software Components
 - Application > Utility > Log : 디버그 메시지 출력을 위한 euart0 포트로 자동 지정됨
 - Third party > Segger > Tiny printf : printf를 통한 메시지 출력을 위한 컴포넌트

@@ -14,7 +14,7 @@
 // <0-256:1>
 // <i> Default: 5
 #ifndef CIRCULAR_QUEUE_LEN_MAX
-#define CIRCULAR_QUEUE_LEN_MAX  5
+#define CIRCULAR_QUEUE_LEN_MAX  8
 #endif
 
 // </h>

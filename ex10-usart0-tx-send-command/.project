@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ex10-usart0-tx-send-command</name>
+	<name>ex09-usart0-tx-rx-interrupt</name>
 	<comment></comment>
 	<projects>
 	</projects>
