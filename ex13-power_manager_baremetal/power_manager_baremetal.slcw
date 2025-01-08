@@ -1,0 +1,6 @@
+---
+label: "power_manager_baremetal"
+project:
+- id: "main"
+  path: "ex13-power_manager_baremetal.slcp"
+  output: "."
