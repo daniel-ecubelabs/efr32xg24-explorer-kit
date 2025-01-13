@@ -77,11 +77,11 @@
 
 // <o SL_UARTDRV_USART_MIKROE_RX_BUFFER_SIZE> Size of the receive operation queue
 // <i> Default: 6
-#define SL_UARTDRV_USART_MIKROE_RX_BUFFER_SIZE  6
+#define SL_UARTDRV_USART_MIKROE_RX_BUFFER_SIZE  16
 
 // <o SL_UARTDRV_USART_MIKROE_TX_BUFFER_SIZE> Size of the transmit operation queue
 // <i> Default: 6
-#define SL_UARTDRV_USART_MIKROE_TX_BUFFER_SIZE 6
+#define SL_UARTDRV_USART_MIKROE_TX_BUFFER_SIZE 16
 
 // </h>
 // <<< end of configuration section >>>
