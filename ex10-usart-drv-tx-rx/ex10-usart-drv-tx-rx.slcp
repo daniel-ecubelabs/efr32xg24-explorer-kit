@@ -30,7 +30,14 @@ component:
 - {id: brd2703a_a02}
 - {id: clock_manager}
 - {id: device_init}
+- {id: iostream}
+- {id: iostream_retarget_stdio}
+- {id: iostream_stdlib_config}
 - {id: sl_system}
+- instance: [vcom]
+  id: uartdrv_eusart
+- instance: [mikroe]
+  id: uartdrv_usart
 define:
 - {name: DEBUG_EFM}
 ui_hints:
