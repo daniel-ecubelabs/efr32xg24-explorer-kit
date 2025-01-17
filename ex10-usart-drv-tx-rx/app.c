@@ -40,7 +40,9 @@ typedef struct data_circ_buf_s data_circ_buf_t;
 uint16_t        local_buff_length;                /**< from usb_uart_rx parser to application */
 uint8_t         local_buff[LOCAL_RX_BUF_SIZE];      /**< for RX from USB/USART*/
 data_circ_buf_t uartRx;
+data_circ_buf_t tx_fifo;
 char complete = 0;
+int uart_transmit(const uint8_t *ptr, int size);
 /***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
@@ -106,7 +108,8 @@ uint16_t waitForCommand(uint8_t *pBuf,
           cmdLen = 0;
           command_type = cmdUNKNOWN_TYPE;
           ret = 1;
-          printf("[1].%s",local_buff);
+          //printf("[1].%s",local_buff);
+          uart_transmit(local_buff, local_buff_length);
         }
       } else if (command_type == cmdUNKNOWN_TYPE) {// Need to find out if
                                                    //   getting regular command
@@ -137,7 +140,8 @@ uint16_t waitForCommand(uint8_t *pBuf,
             cmdLen = 0;
             command_type = cmdUNKNOWN_TYPE;
             ret = 1;
-            printf("[2].%s",local_buff);
+            //printf("[2].%s",local_buff);
+            uart_transmit(local_buff, local_buff_length);
           }
         }
       }
@@ -264,4 +268,52 @@ void USART0_RX_IRQHandler(void)
 
   USART_IntClear(USART0, _USART_IF_MASK);
   //USART0->TXDATA = ch;
+}
+
+int uart_transmit(const uint8_t *ptr, int size)
+{
+  if ((NULL == ptr) || (size <= 0)) {
+    return -1;
+  }
+
+#if HAL_UART_SEND_BLOCKING
+  // Blocking transmit
+  for (int i = 0; i < size; i++)
+  {
+    uart_blocking_tx(HAL_UART_PERIPHERAL, ptr[i]);
+  }
+  return 0;
+#elif HAL_UART_SIMPLE_ASYNCH_SEND
+  return UARTDRV_Transmit(&uart_driver_handle, ptr, size, NULL);
+#else
+  // Will be used as a WR only buffer.
+  // ignore overwrite because it should not happen if printing speed and buffer
+  //   size is chosen correctly.
+  static data_circ_buf_t tx_fifo;
+
+  // We must provide continuous buffer to UARTDRV_Transmit()
+  int sc = 0;
+  const size_t remaining_space = sizeof(tx_fifo.buf) - tx_fifo.tail;
+  if (size > remaining_space) {
+    // copy data to static buffer
+    memcpy(&tx_fifo.buf[tx_fifo.tail], ptr, remaining_space);
+    sc |= UARTDRV_Transmit(sl_uartdrv_usart_mikroe_handle,
+                           &tx_fifo.buf[tx_fifo.tail],
+                           remaining_space,
+                           NULL);
+    // Update pointers
+    size -= remaining_space;
+    ptr += remaining_space;
+    tx_fifo.tail = 0;
+  }
+  if (size) {
+    memcpy(&tx_fifo.buf[tx_fifo.tail], ptr, size);
+    sc |= UARTDRV_Transmit(sl_uartdrv_usart_mikroe_handle,
+                           &tx_fifo.buf[tx_fifo.tail],
+                           size,
+                           NULL);
+    tx_fifo.tail = (tx_fifo.tail + size) & (sizeof(uartRx.buf) - 1);
+  }
+  return sc;
+#endif
 }
