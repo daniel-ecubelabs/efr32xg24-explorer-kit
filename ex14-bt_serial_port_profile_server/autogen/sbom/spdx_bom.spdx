@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2025-05-27T08:54:21.094398900Z
+Created: 2025-05-28T02:57:49.079577Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-simplicity_sdk-2024.12.2
 
@@ -44,6 +44,7 @@ Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-iostream_usart
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-mpu
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-rail_util_pti
+Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-simple_button
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-sl_common
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-sl_system
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_cipher_ecb
@@ -146,6 +147,7 @@ Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-bluetooth_version
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-bluetooth_feature_scanner
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto
+Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-button
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-sl_assert
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-brd2703a_config
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-device_clock
@@ -162,6 +164,7 @@ Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-rail_util_built_in_phys
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-bluetooth_common_release
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-iostream_stdlib_config
+Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-simple_button_core
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-mbedtls_platform_dynamic_memory_allocation_config_default
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-hal_syscfg
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-cmsis_core
@@ -173,9 +176,6 @@ Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-mbedtls_config
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-brd2703a
 Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-gpio
-Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-simple_button
-Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-button
-Relationship: SPDXRef-simplicity_sdk-2024.12.2 CONTAINS SPDXRef-simplicity_sdk-2024.12.2-simple_button_core
 
 ## Package Information
 PackageName: EFR32MG24B210F1536IM48
@@ -385,6 +385,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.2-rail_util_pti CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
+
+## Package Information
+PackageName: Simple Button
+SPDXID: SPDXRef-simplicity_sdk-2024.12.2-simple_button
+PackageVersion: 2024.12.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.2-simple_button CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
 
 ## Package Information
 PackageName: Common Functions
@@ -1649,6 +1660,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
 
 ## Package Information
+PackageName: Generic Button API
+SPDXID: SPDXRef-simplicity_sdk-2024.12.2-button
+PackageVersion: 2024.12.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.2-button CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
+
+## Package Information
 PackageName: Assert Functions
 SPDXID: SPDXRef-simplicity_sdk-2024.12.2-sl_assert
 PackageVersion: 2024.12.2
@@ -1853,6 +1875,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2024.12.2-iostream_stdlib_config CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
 
 ## Package Information
+PackageName: Simple Button Configuration
+SPDXID: SPDXRef-simplicity_sdk-2024.12.2-simple_button_core
+PackageVersion: 2024.12.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2024.12.2-simple_button_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
+
+## Package Information
 PackageName: Default dynamic memory allocation macros for mbedtls
 SPDXID: SPDXRef-simplicity_sdk-2024.12.2-mbedtls_platform_dynamic_memory_allocation_config_default
 PackageVersion: 2024.12.2
@@ -2029,36 +2062,3 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2024.12.2-gpio CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
-
-## Package Information
-PackageName: Simple Button
-SPDXID: SPDXRef-simplicity_sdk-2024.12.2-simple_button
-PackageVersion: 2024.12.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.2-simple_button CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
-
-## Package Information
-PackageName: Generic Button API
-SPDXID: SPDXRef-simplicity_sdk-2024.12.2-button
-PackageVersion: 2024.12.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.2-button CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2
-
-## Package Information
-PackageName: Simple Button Configuration
-SPDXID: SPDXRef-simplicity_sdk-2024.12.2-simple_button_core
-PackageVersion: 2024.12.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2024.12.2-simple_button_core CONTAINED_BY SPDXRef-simplicity_sdk-2024.12.2

@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2025-05-27T08:54:21.094398900Z",
+    "timestamp" : "2025-05-28T02:57:49.079577Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -242,6 +242,18 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:rail_util_pti",
       "name" : "RAIL Utility, PTI",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:simple_button",
+      "name" : "Simple Button",
       "version" : "2024.12.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -1666,6 +1678,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:button",
+      "name" : "Generic Button API",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:sl_assert",
       "name" : "Assert Functions",
       "version" : "2024.12.2",
@@ -1896,6 +1920,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:simple_button_core",
+      "name" : "Simple Button Configuration",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_platform_dynamic_memory_allocation_config_default",
       "name" : "Default dynamic memory allocation macros for mbedtls",
       "version" : "2024.12.2",
@@ -2095,42 +2131,6 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:gpio",
       "name" : "GPIO Driver",
-      "version" : "2024.12.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.2:simple_button",
-      "name" : "Simple Button",
-      "version" : "2024.12.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.2:button",
-      "name" : "Generic Button API",
-      "version" : "2024.12.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.2:simple_button_core",
-      "name" : "Simple Button Configuration",
       "version" : "2024.12.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

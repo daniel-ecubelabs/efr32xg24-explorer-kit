@@ -114,7 +114,9 @@ typedef struct
   uint32_t num_bytes_sent;
   uint32_t num_pack_received;
   uint32_t num_bytes_received;
-  uint32_t num_writes; /* Total number of send attempts */
+  int32_t num_writes; /* Total number of send attempts */
+  uint32_t trans_enable;
+  uint16_t max_mtu_out;
 } ts_counters;
 
 /* Common local functions*/
@@ -150,25 +152,30 @@ static void reset_variables()
 
   memset(&counters, 0, sizeof(counters));
 }
-static uint8_t transfer = 0;
+//static uint8_t transfer = 0;
 static uint8_t *transdata = NULL;
-static int32_t total_length = 50*1024;
-static uint32_t write_offset = 0;
-static uint16_t max_mtu_out = 0;
+//static int32_t total_length = 50*1024;
+//static uint32_t write_offset = 0;
+
 /**************************************************************************
  *    Application Init code
  ***************************************************************************/
 void app_init(void)
 {
   uint16_t i = 0 ;
-  transdata = malloc(50*1024);
 
   app_log("app_init++\r\n");
 
+  reset_variables();
+
+  counters.num_writes = 50*1024;
+
+  transdata = malloc(counters.num_writes);
+
   if(transdata != NULL){
       app_log("memory allcated\r\n");
-      for(i=0;i<50*1024;i++){
-          transdata[i] = i/0xFF;
+      for(i=0;i<counters.num_writes;i++){
+          transdata[i] = i%0xFF;
       }
   }
   app_log("app_init--\r\n");
@@ -180,62 +187,53 @@ void app_init(void)
 
 void app_process_action(void)
 {
-
-//    send_spp_data();
-//  }
   size_t len = 0;
   sl_status_t result;
 
   if (STATE_SPP_MODE == main_state) {
-  if(transfer == 0 && sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(0)) == SL_SIMPLE_BUTTON_PRESSED){
-      app_log("btn0 pressed\r\n");
-      transfer = 1;
-  }
+    if(counters.trans_enable == 0 && sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(0)) == SL_SIMPLE_BUTTON_PRESSED){
+        app_log("btn0 pressed\r\n");
+        counters.trans_enable = 1;
+    }
+    if(counters.trans_enable == 1 && sl_simple_button_get_state(SL_SIMPLE_BUTTON_INSTANCE(1)) == SL_SIMPLE_BUTTON_PRESSED){
+        app_log("btn1 pressed\r\n");
+        counters.trans_enable = 0;
+    }
 
-  if(transfer){
-      if(total_length>0){
-          if(total_length<max_mtu_out){
-              len = total_length;
-          }
-          else{
-              len = max_mtu_out;
-          }
-          total_length -= max_mtu_out;
+    if(counters.trans_enable){
+        if(counters.num_writes>0){
+            if(counters.num_writes<counters.max_mtu_out){
+                len = counters.num_writes;
+            }
+            else{
+                len = counters.max_mtu_out;
+            }
+            counters.num_writes -= counters.max_mtu_out;
 
-          app_log("max=%d\r\n", max_mtu_out);
-          app_log("len=%d\r\n", len);
-          app_log("write_offset=%d\r\n", write_offset);
-          // Stack may return "out-of-memory" (SL_STATUS_NO_MORE_RESOURCE) error if
-          //   the local buffer is full -> in that case, just keep trying until the
-          //   command succeeds
-          do {
-              result = sl_bt_gatt_server_send_notification(conn_handle,
+            app_log("max=%d\r\n", counters.max_mtu_out);
+            app_log("len=%d\r\n", len);
+            app_log("write_offset=%ld\r\n", counters.num_bytes_sent);
+            // Stack may return "out-of-memory" (SL_STATUS_NO_MORE_RESOURCE) error if
+            //   the local buffer is full -> in that case, just keep trying until the
+            //   command succeeds
+            do {
+                result = sl_bt_gatt_server_send_notification(conn_handle,
                                                          gattdb_spp_data,
                                                          len,
-                                                         &transdata[write_offset]);
-              counters.num_writes++;
-          } while (result == SL_STATUS_NO_MORE_RESOURCE);
+                                                         &transdata[counters.num_bytes_sent]);
+                //counters.num_writes++;
+            } while (result == SL_STATUS_NO_MORE_RESOURCE);
 
-          if (result != 0) {
-              app_log("Unexpected error: %lu\r\n", result);
-          } else {
-              write_offset += len;
-              counters.num_pack_sent++;
+            if (result != 0) {
+                app_log("Unexpected error: %lu\r\n", result);
+            } else {
               counters.num_bytes_sent += len;
-          }
+            }
+            sl_udelay_wait(1000);
+        }
       }
-      else{
-
-              char ch[2] = "\r\n";
-              result = sl_bt_gatt_server_send_notification(conn_handle,
-                                                                       gattdb_spp_data,
-                                                                       2,
-                                                                       &ch[0]);
-
-      }
+      //send_spp_data();
     }
-  }
-
 }
 
 /**************************************************************************//**
@@ -254,8 +252,8 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
     // Do not call any stack command before receiving this boot event!
     case sl_bt_evt_system_boot_id:
       app_log("SPP Role: SPP Server\r\n");
-      reset_variables();
-      sc = sl_bt_gatt_server_set_max_mtu(247, &max_mtu_out);
+      //reset_variables();
+      sc = sl_bt_gatt_server_set_max_mtu(247, &counters.max_mtu_out);
       app_assert_status(sc);
       // Create an advertising set.
       sc = sl_bt_advertiser_create_set(&advertising_set_handle);
@@ -314,7 +312,7 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
       /* Try to send maximum length packets whenever possible */
       min_packet_size = max_packet_size;
-      max_mtu_out = max_packet_size;
+      counters.max_mtu_out = max_packet_size;
       app_log("MTU exchanged: %d\r\n", evt->data.evt_gatt_mtu_exchanged.mtu);
       break;
 
@@ -432,14 +430,14 @@ static void send_spp_data()
                                                    gattdb_spp_data,
                                                    len,
                                                    data);
-      counters.num_writes++;
+      //counters.num_writes++;
     } while (result == SL_STATUS_NO_MORE_RESOURCE);
 
     if (result != 0) {
       app_log("Unexpected error: %lu\r\n", result);
     } else {
-      counters.num_pack_sent++;
-      counters.num_bytes_sent += len;
+      //counters.num_pack_sent++;
+      //counters.num_bytes_sent += len;
     }
   }
   return;

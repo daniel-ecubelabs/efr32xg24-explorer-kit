@@ -158,8 +158,11 @@ static void reset_variables()
 /**************************************************************************
  *    Application Init code
  ***************************************************************************/
+static uint8_t *buffer = NULL;
 void app_init(void)
 {
+  buffer = malloc(50*1024);
+  memset(buffer, 0, 50*1024);
 }
 
 /**************************************************************************//**
@@ -167,9 +170,16 @@ void app_init(void)
  *****************************************************************************/
 void app_process_action(void)
 {
-//  if (STATE_SPP_MODE == main_state) {
+  uint16_t i = 0;
+  if (STATE_SPP_MODE == main_state) {
 //    send_spp_data();
-//  }
+      if(counters.num_bytes_received>=50*1024){
+          for(i=0;i<50*1024;i++){
+            app_log("%d,%2x ", i, buffer[i]);
+          }
+          counters.num_bytes_received = 0;
+      }
+  }
 }
 
 /**************************************************************************//**
@@ -188,7 +198,7 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       app_log("SPP Role: SPP client\r\n");
       reset_variables();
       sl_bt_gatt_server_set_max_mtu(247, &max_mtu_out);
-      sl_bt_scanner_start(sl_bt_gap_2m_phy/*sl_bt_gap_1m_phy*/, sl_bt_scanner_discover_generic);
+      sl_bt_scanner_start(sl_bt_gap_1m_phy, sl_bt_scanner_discover_generic);
       main_state = SCANNING;
       break;
 
@@ -308,10 +318,11 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 //            sl_iostream_vcom_handle,
 //            evt->data.evt_gatt_server_attribute_value.value.data[i]);
 //        }
+          memcpy(&buffer[counters.num_bytes_received], &evt->data.evt_gatt_server_attribute_value.value.data[0], evt->data.evt_gatt_server_attribute_value.value.len);
         counters.num_pack_received++;
         counters.num_bytes_received +=
           evt->data.evt_gatt_server_attribute_value.value.len;
-        app_log("counters.num_bytes_received=%d\r\n",counters.num_bytes_received);
+        app_log("counters.num_bytes_received=%ld\r\n",counters.num_bytes_received);
       }
       break;
 

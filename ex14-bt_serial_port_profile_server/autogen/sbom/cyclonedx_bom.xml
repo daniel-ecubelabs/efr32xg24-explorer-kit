@@ -10,7 +10,7 @@ referenced in this SBOM.)
 -->
 <bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1">
   <metadata>
-    <timestamp>2025-05-27T08:54:21.094398900Z</timestamp>
+    <timestamp>2025-05-28T02:57:49.079577Z</timestamp>
     <authors>
       <author>
         <name>Silicon Laboratories, Inc.</name>
@@ -207,6 +207,16 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2024.12.2:rail_util_pti" type="library">
           <name>RAIL Utility, PTI</name>
+          <version>2024.12.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2024.12.2:simple_button" type="library">
+          <name>Simple Button</name>
           <version>2024.12.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -1425,6 +1435,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2024.12.2:button" type="library">
+          <name>Generic Button API</name>
+          <version>2024.12.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2024.12.2:sl_assert" type="library">
           <name>Assert Functions</name>
           <version>2024.12.2</version>
@@ -1623,6 +1643,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2024.12.2:simple_button_core" type="library">
+          <name>Simple Button Configuration</name>
+          <version>2024.12.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2024.12.2:mbedtls_platform_dynamic_memory_allocation_config_default" type="library">
           <name>Default dynamic memory allocation macros for mbedtls</name>
           <version>2024.12.2</version>
@@ -1802,36 +1832,6 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2024.12.2:gpio" type="library">
           <name>GPIO Driver</name>
-          <version>2024.12.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2024.12.2:simple_button" type="library">
-          <name>Simple Button</name>
-          <version>2024.12.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2024.12.2:button" type="library">
-          <name>Generic Button API</name>
-          <version>2024.12.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2024.12.2:simple_button_core" type="library">
-          <name>Simple Button Configuration</name>
           <version>2024.12.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
